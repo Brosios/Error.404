@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    
+    height: 100vh;
+    background: radial-gradient(#000000, #2f2828);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img{
+    width: 100%;
+    margin-left: 10px;
+}
+h1 {
+    top: -165px;
+    margin-left: 75px;
+    text-align: unset;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 0 0 10px rgb(247, 0, 0);
+}
+.container {
+    width: 100%;
+    height: 100%;;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button {
+    background-color: transparent;
+    position: relative;
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    border-radius: 130px;
+    padding: 20px;
+    border: none;
+    overflow: hidden;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.button1 {
+    position: absolute;
+    left: -100%;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(135deg, black, #f20606, #521515, white);
+	height: 100vh;
+    animation: anime 3s linear  infinite;
+}
+.button2 {
+    position: relative;
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(135deg, black, #f20606, #521515, white);
+    animation: anime3 3s infinite linear;
+    transition-delay: 7s;
+}
+.button:hover {
+    text-shadow: 0 0 10px rgb(10, 10, 129), 0 0 20px rgb(221, 11, 11),
+    0 0 30px red, 0 0 35px rgb(235, 229, 229);
+}
+@keyframes anime {
+    0% { left: -100%;}
+    50%, 100% {left: 100%;}
+}
